@@ -23,7 +23,7 @@ else
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	# -L allow redirect, -Ss show error if it fails, -o output file
 fi
-if [![ -d  ~/.vim/bundle]]; then
+if [[ ! -d  ~/.vim/bundle ]]; then
 	mkdir -p ~/.vim/bundle
 fi
 
