@@ -1,0 +1,11 @@
+Versions known to have worked with this:
+
+MacVim 7.4.52
+
+$ node -v
+v0.10.32
+$ npm -v
+2.1.5
+$ jshint -v
+jshint v2.5.6
+
