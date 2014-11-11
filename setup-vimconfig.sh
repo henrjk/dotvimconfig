@@ -1,8 +1,14 @@
 #!/bin/bash
-# This script is in a git repository which contains my personal .vimrc file as well 
-# as pathogen installed. 
-# required installs curl:
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# This script is in a git repository which contains my personal .vimrc file.
+# It installs the pathogen bundle and after this vim should be started and
+# one should verify using scriptnames: 
+# that pathogen installed. 
+#
+ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+HOME_REL_SCRIPT_DIR=`python -c "import os.path; print os.path.relpath( '$ABS_SCRIPT_DIR', '$HOME')"`
+DIR=$HOME_REL_SCRIPT_DIR
+# Use much shorter DIR variable in remainder of script
+
 if [[ -a $~/.vimrc ]]; then
 	echo WARN: ~/.vimrc already exists: skipping creating symbolic linking to $DIR/.vimrc
 else

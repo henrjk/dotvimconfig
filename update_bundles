@@ -3,10 +3,11 @@
 # Initially copied from 
 # https://github.com/tsaleh/dotfiles/blob/d5fcdac3135758a649ad26f951917cd9b659189c/vim/update_bundles
 
+# Requirements:
+#   jshint: node and jshint command line tool
+
 # cool things not yet added:
 #  git://github.com/kana/vim-textobj-user.git  define ones own text objects
-#
-
 # bundles looking interesting but currently (perhaps) not needed.
 perhaps_latter = %w{
   git://github.com/Valloric/YouCompleteMe.git
@@ -46,6 +47,7 @@ gb_lang_web = %w{
   git://github.com/othree/html5.vim.git
   git://github.com/hail2u/vim-css3-syntax.git
   git://github.com/pangloss/vim-javascript.git
+  git://github.com/wookiehangover/jshint.vim.git
   git://github.com/elzr/vim-json.git
   git://github.com/vim-scripts/jQuery.git
 }
@@ -70,5 +72,7 @@ git_bundles.each do |url|
   puts url
   `git clone -q #{url}`
 end
+
+echo Run :Helptags inside vim to generate documentation
 
 # Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
