@@ -1,3 +1,5 @@
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible
 
 " See also my VimASIDE_Notes:
@@ -32,11 +34,15 @@ set relativenumber
 " As a matter of best practice, I try to keep all lines in files from exceeding 80 characters so
 " there are no wrapping issues when viewed anywhere. The following command will create a vertical
 " line at 80 characters. In most of my color themes, it will show as gray.
-set colorcolumn=100
+set colorcolumn=80
 set textwidth=100
 
-" Tabs and extra whitespace are evil, so let's highlight them with some fun characters.
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+" The following comment should have tabs and trailing spaces highlighted
+" Tabs	 and extra whitespace   are evil, so let's highlight them 
+"	with some fun characters.      	
+set listchars=tab:»·,trail:·,nbsp:~
+" set listchars=tab:>=,trail:.,nbsp:~
+" set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~
 set list
 
 " I like to see the line on which the cursor sits to be highlighted so it is easier to locate.
@@ -59,7 +65,7 @@ set smartindent
 "" see http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
 set wrap
 set linebreak
-set nolist  " list disables linebreak
+" set nolist  " list disables linebreak but want to see tabs etc (see above)
 set textwidth=0
 set wrapmargin=0
 
