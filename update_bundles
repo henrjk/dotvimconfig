@@ -37,7 +37,9 @@ gb_general = %w{
   git://github.com/tomtom/tcomment_vim.git
   git://github.com/tpope/vim-repeat.git
   git://github.com/tpope/vim-surround.git
+  git://github.com/tpope/vim-unimpaired.git
   git://github.com/tpope/vim-vividchalk.git
+  git://github.com/chrisbra/Recover.vim.git
   git://github.com/Lokaltog/vim-powerline.git
 }
 
@@ -45,6 +47,7 @@ gb_general = %w{
 gb_lang_web = %w{
   git://github.com/mattn/emmet-vim.git
   git://github.com/othree/html5.vim.git
+  git://github.com/groenewege/vim-less.git
   git://github.com/hail2u/vim-css3-syntax.git
   git://github.com/pangloss/vim-javascript.git
   git://github.com/heavenshell/vim-jsdoc.git
