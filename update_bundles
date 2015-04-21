@@ -77,6 +77,5 @@ git_bundles.each do |url|
   `git clone -q #{url}`
 end
 
-echo Run :Helptags inside vim to generate documentation
 
 # Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
