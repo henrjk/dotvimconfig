@@ -6,10 +6,8 @@
 #
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# download files first, does nothing if already downloaded
-$ABS_SCRIPT_DIR/download 
-ln -s downloads/autoload autoload
-ln -s downloads/bundle bundle
+# download files first, does not download again if already downloaded
+$ABS_SCRIPT_DIR/download   # also establishes symbolic links
 
 HOME_REL_SCRIPT_DIR=`python -c "import os.path; print os.path.relpath( '$ABS_SCRIPT_DIR', '$HOME')"`
 DIR=$HOME_REL_SCRIPT_DIR
