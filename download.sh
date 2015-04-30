@@ -14,7 +14,8 @@ if [[ -a  "$DOWNLOADS/autoload/pathogen.vim" ]]; then
 	echo "WARN: $DOWNLOADS/autoload/pathogen.vim already exists: skipping download."
 else
 	mkdir -p "$DOWNLOADS/autoload" && \
-	curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim
+	curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
+  eexit "curl pathogen failed"
 	# -L allow redirect, -Ss show error if it fails, -o output file
 fi
 
@@ -26,8 +27,8 @@ else
   ./update_bundles || eexit "bundle update failed" 
 fi
 
-[[ -a autoload ]] || ln -s downloads/autoload autoload
-[[ -a bundle   ]] || ln -s downloads/bundle bundle
+[[ -a autoload ]] || ln -s downloads/autoload autoload || eexit "ln -s for autoload failed"
+[[ -a bundle   ]] || ln -s downloads/bundle bundle || eexit "ln -s for bundle failed"
 
 
 # some message output functions:
