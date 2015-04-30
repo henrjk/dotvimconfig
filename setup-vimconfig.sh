@@ -5,6 +5,12 @@
 # that pathogen installed. 
 #
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# download files first, does nothing if already downloaded
+$ABS_SCRIPT_DIR/download 
+ln -s downloads/autoload autoload
+ln -s downloads/bundle bundle
+
 HOME_REL_SCRIPT_DIR=`python -c "import os.path; print os.path.relpath( '$ABS_SCRIPT_DIR', '$HOME')"`
 DIR=$HOME_REL_SCRIPT_DIR
 # Use much shorter DIR variable in remainder of script
