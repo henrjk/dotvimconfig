@@ -57,6 +57,8 @@ set noswapfile
 " No matter what I am editing, I like to see line numbers to the left; however, gestures are a lot
 " easier if the line numbers are *relative*, so that's what I set.
 set relativenumber
+" number will show the absolute number of the line where the cursor is.
+set number
 
 
 " As a matter of best practice, I try to keep all lines in files from exceeding 80 characters so
