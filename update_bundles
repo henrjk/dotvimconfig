@@ -9,7 +9,7 @@
 # cool things not yet added:
 #  git://github.com/kana/vim-textobj-user.git  define ones own text objects
 # bundles looking interesting but currently (perhaps) not needed.
-perhaps_latter = %w{
+perhaps_later = %w{
   git://github.com/Valloric/YouCompleteMe.git
   git://github.com/tsaleh/vim-tmux.git
   git://github.com/slim-template/vim-slim.git
@@ -58,12 +58,16 @@ gb_lang_web = %w{
   git://github.com/vim-scripts/jQuery.git
 }
 
+gb_lang_go = %w{
+  git://github.com/fatih/vim-go.git
+}
+
 gb_lang_etc = %w{
   git://github.com/tpope/vim-haml.git
   git://github.com/tpope/vim-markdown.git
 }
 
-git_bundles = gb_files + gb_git + gb_general + gb_lang_web + gb_lang_etc
+git_bundles = gb_files + gb_git + gb_general + gb_lang_web + gb_lang_go + gb_lang_etc
 
 require 'fileutils'
 require 'open-uri'
