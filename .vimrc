@@ -10,6 +10,7 @@ set nocompatible
 " Parts derived from https://github.com/joshdmiller/vim/blob/master/vim/lib/environment.vim
 "
 execute pathogen#infect()
+execute pathogen#infect('~/.vim/bundle-forked/{}')
 syntax on
 set showcmd                     " display incomplete commands
 filetype plugin indent on	" load file type plugins + indentation
@@ -22,9 +23,29 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Set extra options when running in GUI mode
+if has("gui_running")
+    set guioptions-=T
+    set guioptions-=e
+    set t_Co=256
+    set guitablabel=%M\ %t
+else
+    set t_Co=256
+endif
+
+"------------------------------------------------------------------------------
+" Custom color scheme
+"------------------------------------------------------------------------------
+try
+    colorscheme foursee
+catch
+endtry
+
+set background=dark
 
 " colorscheme
-colorscheme desert
+" # colorscheme desert
+
 
 " No matter what I am editing, I like to see line numbers to the left; however, gestures are a lot
 " easier if the line numbers are *relative*, so that's what I set.
