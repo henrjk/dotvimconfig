@@ -114,10 +114,12 @@ nnoremap <leader><leader> <c-^> " switch buffer
 set hidden
 
 "" Spell Checking
-set spell spelllang=en_us
 map <F5> :setlocal spell! spelllang=en_us<CR>
+" F5 to activate spelling
+
 hi SpellBad cterm=underline ctermbg=LightGrey
 hi SpellRare cterm=underline ctermbg=LightGrey
+
 
 
 "" MARKDOWN
