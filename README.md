@@ -3,12 +3,15 @@ dotvimconfig
 
 My personal vim configuration. Based on various places found on the web and github.
 
-Prerequisites beyond git are:
+Prerequisites beyond vim and git are:
 
 1. Delete or move ~/.vimrc and ~/.vim to backup locations.
-2. node, npm installed.
-3. jshint installed? Seems like this is already checked in.
-4. vim already installed. 
+
+2. The following has to be installed first:
+
+  - ruby
+  - node, npm
+  - jshint ?
 
 See file `versions.txt`
 
