@@ -47,6 +47,11 @@ set background=dark
 " # colorscheme desert
 
 
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
 " No matter what I am editing, I like to see line numbers to the left; however, gestures are a lot
 " easier if the line numbers are *relative*, so that's what I set.
 set relativenumber
