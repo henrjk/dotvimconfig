@@ -72,7 +72,7 @@ set listchars=tab:»·,trail:·,nbsp:~
 set list
 
 " I like to see the line on which the cursor sits to be highlighted so it is easier to locate.
-" set cursorline
+set cursorline
 
 
 " Display the cursor position on the last line of the screen or in the status
