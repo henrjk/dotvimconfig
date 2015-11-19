@@ -70,6 +70,7 @@ set listchars=tab:»·,trail:·,nbsp:~
 " set listchars=tab:>=,trail:.,nbsp:~
 " set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~
 set list
+" For go (golang) setlocal nolist is set in after/ftplugin/vim.go
 
 " I like to see the line on which the cursor sits to be highlighted so it is easier to locate.
 set cursorline
