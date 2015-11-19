@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Download all files needed so that subsequent
-# setup does not require network access
+# Download all files needed to refresh content.
+#
+# To share content use include_bundles.sh
 
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -10,24 +11,12 @@ DOWNLOADS="$ABS_SCRIPT_DIR/downloads"
 mkdir -p "$DOWNLOADS"
 
 # https://github.com/tpope/vim-pathogen
-if [[ -a  "$DOWNLOADS/autoload/pathogen.vim" ]]; then
-  warn "$DOWNLOADS/autoload/pathogen.vim already exists: skipping download."
-else
-  mkdir -p "$DOWNLOADS/autoload" && \
-  curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
-  eexit "curl pathogen failed"
-  # -L allow redirect, -Ss show error if it fails, -o output file
-fi
+mkdir -p "$DOWNLOADS/autoload" && \
+curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
+eexit "curl pathogen failed"
+# -L allow redirect, -Ss show error if it fails, -o output file
 
-if [[ -d  "$DOWNLOADS/bundle" ]]; then
-  warn "$DOWNLOADS/bundle already exists: skipping cloning of bundles."
-else
-  "$ABS_SCRIPT_DIR/clone_bundles.sh" || eexit "clone_bundles.sh failed" 
-fi
-
-[[ -a autoload ]] || ln -s downloads/autoload autoload || eexit "ln -s for autoload failed"
-[[ -a bundle   ]] || ln -s downloads/bundle bundle || eexit "ln -s for bundle failed"
-
+"$ABS_SCRIPT_DIR/clone_bundles.sh" || eexit "clone_bundles.sh failed" 
 
 # some message output functions:
 error () {

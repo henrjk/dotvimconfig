@@ -6,8 +6,18 @@
 #
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# download files first, does not download again if already downloaded
-$ABS_SCRIPT_DIR/download.sh   # also establishes symbolic links
+cat << INFO
+Using vim configuration as version controlled.
+Versions are shown in file downloads/bundle/versions.txt
+
+To update all version use
+  dev $ ./download.sh
+
+This will clone all plugins and redownload pathogen.vim.
+To share this the .git repository information must be deleted with
+  dev $ ./include_bundles.sh
+
+INFO
 
 HOME_REL_SCRIPT_DIR=`python -c "import os.path; print os.path.relpath( '$ABS_SCRIPT_DIR', '$HOME')"`
 DIR="$HOME_REL_SCRIPT_DIR"
@@ -25,17 +35,9 @@ else
   ln -s "$DIR" ~/.vim
 fi
 
-# https://github.com/tpope/vim-pathogen
-if [[ -a  ~/.vim/autoload/pathogen.vim ]]; then
-  warn "~/.vim/autoload/pathogen.vim already exists: skipping download."
-else
-  mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-  curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-  # -L allow redirect, -Ss show error if it fails, -o output file
-fi
-if [[ ! -d  ~/.vim/bundle ]]; then
-  mkdir -p ~/.vim/bundle
-fi
+[[ -a autoload ]] || ln -s downloads/autoload autoload || eexit "ln -s for autoload failed"
+[[ -a bundle   ]] || ln -s downloads/bundle bundle || eexit "ln -s for bundle failed"
+
 
 # some message output functions:
 error () {
