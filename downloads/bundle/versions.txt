@@ -1,0 +1,169 @@
+Versions captured on 2015-11-19T20:10:59+0000
+=== csapprox :
+7981dac5 2013-07-26T23:41:55-04:00  (HEAD -> master, origin/master, origin/HEAD) Create the Normal highlight if it doesn't exist
+7f0186d6 2013-03-09T02:21:59-05:00  Refactor color string to RGB code into autoloads
+e0a47223 2013-03-09T02:21:59-05:00  Fix handling of pre-OS X Mac color names
+af90b27f 2013-03-07T23:59:30-05:00  Add fbterm as a known 256-color terminal
+38460da0 2013-02-14T22:52:06-05:00  removing pipes around help csapprox-changelog for user
+=== ctrlp.vim :
+b5d3fe66 2013-07-29T11:04:59+07:00  (HEAD -> master, origin/master, origin/HEAD) Don't check for CtrlPLinePre
+83397bd0 2013-07-28T16:57:33+07:00  Use ts-prompt automatically when possible
+6e4fb3b4 2013-07-24T17:58:24+07:00  Add a max results setting
+aa026c0b 2013-07-19T02:12:36+07:00  Accept an optional bookmark name argument
+a14edbfc 2013-07-15T07:41:08+07:00  tags for ocaml
+=== emmet-vim :
+451367a2 2015-11-10T10:34:50+09:00  (HEAD -> master, origin/master, origin/HEAD) add doc for emmet-update-tag
+f752a425 2015-11-10T10:25:11+09:00  add doc for emmet-expand-word
+1672e566 2015-11-10T09:43:25+09:00  should behave on only html
+5819343b 2015-11-10T09:41:17+09:00  oops. fixed bug
+913dfe68 2015-11-10T09:39:13+09:00  remove debug message
+=== Gist.vim :
+7f279e51 2014-10-19T21:30:13-04:00  (HEAD -> master, tag: 7.2, origin/master, origin/HEAD) Version 7.2: This is an upgrade for Gist.vim: fixed many bugs.
+52df580b 2014-10-19T21:30:13-04:00  (tag: 7.1) Version 7.1: This is an upgrade for Gist.vim: updated installation notes.
+ae0ca2e5 2012-10-07T17:37:01-05:00  (tag: 7.0) Version 7.0: This is an upgrade for Gist.vim: fixed few bugs.
+db2bdcf9 2012-09-13T00:26:54-05:00  (tag: 6.9) Version 6.9: This is an upgrade for Gist.vim: fixed few bugs.
+40e0dd10 2012-08-08T01:16:04-05:00  (tag: 6.8) Version 6.8
+=== gitv :
+e10a8963 2015-08-22T12:03:50+01:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #93 from liujincheng/master
+b5ccae58 2015-08-22T16:48:08+08:00  adjust extraArgs position
+1f12f8e8 2015-05-30T13:23:56+01:00  Merge pull request #91 from blueyed/doc-fixes
+a372be29 2015-05-29T00:47:06+02:00  minor: doc: improve wording
+76a30e96 2015-02-28T10:34:13+00:00  (tag: v1.3) Merge pull request #89 from aschrab/completion
+=== html5.vim :
+ad38231d 2015-10-26T22:17:40+08:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #68 from sheerun/patch-1
+54f8c090 2015-10-24T14:40:09+02:00  Reference vim-polyglot language pack
+76da614e 2015-08-13T15:54:48+08:00  Fix #65, Revert "Fix #63, indent all possible element name"
+a7def465 2015-08-11T17:01:52+08:00  Fix #63, indent all possible element name
+40e924c9 2015-05-19T09:27:48+08:00  Merge pull request #62 from bendavis78/html5-custom-tag-spec
+=== jQuery :
+895d2375 2011-06-03T07:18:26-07:00  (HEAD -> master, tag: 0.5.2, origin/master, origin/HEAD) Version 0.5.2: Fix an invalid regular expression
+8ddbcb95 2011-06-03T07:18:26-07:00  (tag: 0.5.1) Version 0.5.1: Fix an error with contains (it's a reserved keyword for Vim).
+f16bfec2 2011-05-11T12:11:29-07:00  (tag: 0.5) Version 0.5: Upgrade to match jquery 1.6 keywords
+1af1eda9 2010-11-06T11:03:50-07:00  (tag: 0.4) Version 0.4
+d321b054 2010-11-06T11:03:50-07:00  (tag: 0.3@1) Version 0.3@1: Recognize new keywords for jQuery 1.4
+=== jshint.vim :
+34b4faf1 2015-09-01T11:58:41-07:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #40 from armno/master
+01960f69 2015-09-01T11:51:29-07:00  Merge pull request #46 from Shriken/patch-1
+f443664c 2015-09-01T11:51:15-07:00  Merge pull request #48 from mrpdaemon/fix-jshintrc-location
+0cca51b4 2015-09-01T11:50:37-07:00  Merge pull request #49 from mrpdaemon/use-buffer-scope
+4b7bf00e 2015-06-19T11:08:48-07:00  Use buffer scope for .jshintrc location
+=== nerdtree :
+cedb40b4 2015-11-16T13:17:59+00:00  (HEAD -> master, origin/master, origin/HEAD) move TreeFileNode.makeRoot() to NERDTree.changeRoot(node)
+71ee64fe 2015-11-16T11:30:16+00:00  add TreeDirNode.getDirChildren() - using this in a plugin
+bf217c75 2015-11-16T11:29:54+00:00  fix a couple of var references in UI
+d36b7936 2015-11-16T11:28:24+00:00  dont use b:NERDTreeRoot internally, but leave the var there for compat
+0b966aa2 2015-11-16T09:35:31+00:00  refactor TreeDirNode.reveal slightly
+=== Recover.vim :
+efa491f6 2015-08-14T09:24:51+02:00  (HEAD -> master, origin/master, origin/HEAD) Fix #38 (do not fnameescape filename)
+15dc16a2 2015-06-10T13:57:31+02:00  check for existence of v:progpath before using it
+3a484a8d 2015-05-24T13:17:10+02:00  Don't assume vanilla Vim is being used
+18986428 2015-04-23T21:56:22+02:00  also find .swf files
+155f68c7 2015-04-23T21:55:06+02:00  check if stdout is actually a tty
+=== syntastic :
+cd40fe97 2015-11-16T16:49:58+02:00  (HEAD -> master, origin/master, origin/HEAD) Ansible-lint checker: make "-p" option mandatory.
+13c8e753 2015-11-16T13:19:24+02:00  Ansible-lint checker: add version check.
+7d627000 2015-11-15T22:26:44+02:00  Checkers clang_check and clang_tidy: workaround for a regression in Clang.
+721a42d5 2015-11-15T19:47:34+02:00  Ansible-lint checker: cleanup.
+f8e638d2 2015-11-15T15:29:04+02:00  Add ansible-lint syntax checkers
+=== tcomment_vim :
+f5ca095f 2015-11-12T20:00:52+01:00  (HEAD -> master, origin/master, origin/HEAD) runtime! autoload/tcomment/types/*.vim
+a63f458b 2015-11-10T20:21:21+01:00  FIX #153: map tblgen -> cpp
+c0679322 2015-10-13T17:06:36+02:00  Set markdown comment to <!--- ... --->
+e5da693f 2015-10-02T14:06:06+02:00  docs
+fe3cb6e5 2015-10-01T19:52:54+02:00  (tag: 3.08) Support for markdown
+=== vim-css3-syntax :
+9e0ef247 2015-09-23T15:02:12+09:00  (HEAD -> master, tag: v0.15.0, origin/master, origin/HEAD) Add css-round-display-1.vim
+a801b7b7 2015-09-23T14:43:49+09:00  Add css-ui-4.vim
+f970b3ab 2015-09-23T14:43:33+09:00  Rename to css-ui-3.vim
+4afac286 2015-09-23T14:32:01+09:00  Add css-text-4.vim
+0b469af1 2015-09-18T10:20:48+09:00  Follow WD-css-grid-1-20150917
+=== vim-fugitive :
+1ecd12d5 2015-11-06T15:54:34-05:00  (HEAD -> master, origin/master, origin/HEAD) Add support for fish shell syntax
+f8aa87a4 2015-11-03T09:52:22-05:00  Fix when $GIT_DIR is set and is not an absolute path
+dba8a070 2015-10-16T23:48:38-04:00  Fix diff sometimes opening in preview window
+8cf3d94a 2015-10-07T00:21:49-04:00  Support gf in git filetypes
+28de2a1d 2015-10-07T00:21:49-04:00  Enable jumping on @@ hunk header
+=== vim-git :
+37fd7c57 2015-10-06T17:33:15-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #32 from matthewd/worktrees
+6266338d 2015-10-01T09:25:41+09:30  Recognise commits from inside worktrees
+36126609 2015-01-19T12:03:07-06:00  Merge pull request #28 from garymh/patch-1
+8681678d 2015-01-19T11:44:35-06:00  Adding "gitconfig" (without the dot) to the filetypes
+297e7075 2014-07-18T11:47:18-04:00  Fix "Filenames:" header for gitsendemail
+=== vim-go :
+6384e3ab 2015-11-16T11:13:53+02:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #602 from fatih/auto-height-quickfix
+338ad4b5 2015-11-16T10:35:19+02:00  Merge pull request #604 from moorereason/fix603
+749599c8 2015-11-15T22:21:50-06:00  Fix goCharacter syntax region to be contained
+d5a1dff5 2015-11-16T01:37:38+02:00  util: add auto quickfix window height for errors [GH-592]
+a98ed535 2015-11-15T23:45:19+02:00  Merge pull request #601 from tsuna/master
+=== vim-haml :
+5c118902 2015-10-05T15:41:52-04:00  (HEAD -> master, origin/master, origin/HEAD) Minimal README
+204e3272 2014-08-08T12:24:30-04:00  Fix comments option
+9b7c3341 2014-08-07T19:55:50-04:00  Set comments option
+18ff6282 2014-06-10T19:03:07-04:00  Fix @media
+4d0834f0 2014-05-12T22:17:27-04:00  Merge pull request #62 from mil/sass-mediaquery-fix
+=== vim-javascript :
+1d8c2677 2015-09-23T13:07:02-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge branch 'develop'
+255d5e6d 2015-09-16T10:20:23-07:00  (origin/develop) Merge pull request #302 from unclechu/develop-prop-synonym
+131c2d36 2015-09-16T12:07:49+03:00  Added jsdoc synonym @prop for @property
+924de0eb 2015-09-01T15:05:26-04:00  Merge pull request #292 from wbinnssmith/wbinnssmith/async-await-develop
+e9ee3895 2015-08-31T21:06:19-07:00  Add support for async and await keywords
+=== vim-jsdoc :
+19c5987e 2015-11-17T23:10:58+09:00  (HEAD -> master, origin/master, origin/HEAD) Merge branch 'ryanoasis-default-value'
+b86ac242 2015-11-16T11:12:22-05:00  Fixes #42 jsdoc_input_description default value
+469f23de 2015-09-26T00:25:26+09:00  Merge pull request #39 from KyleLH/master
+d317dbbe 2015-09-23T15:00:34-04:00  [KH] Add alternative remapping suggestion
+7c83fe26 2015-09-12T14:37:08+09:00  Bump up patch level.
+=== vim-json :
+f5e3181d 2015-05-11T22:11:47-05:00  (HEAD -> master, origin/master, origin/HEAD) setlocal filetype instead of apparently troublesome setfiletype in ftdetect
+1839a737 2015-05-10T11:25:16-05:00  added link to manual install instructions
+3673f434 2015-05-10T11:21:09-05:00  Merge pull request #53 from igas/geojson
+092030d8 2015-05-04T15:59:15+08:00  Add geojson file type
+994a031b 2015-04-07T02:43:48-05:00  updated readme.md images
+=== vim-less :
+6fae407f 2015-08-27T22:43:30+05:30  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #53 from jbigalet/master
+6984bf48 2015-08-27T17:06:01+02:00  fix vim error
+55a98f0d 2015-06-04T13:15:50-07:00  Merge pull request #45 from suy/comments
+4be27663 2015-06-04T13:22:16+02:00  ask for help
+902870b3 2015-03-20T23:33:55+01:00  Merge pull request #50 from sebkoller/master
+=== vim-markdown :
+15d19778 2015-10-12T19:38:50-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #84 from larryhynes/patch-1
+64e5a2f2 2015-10-13T00:17:19+01:00  Fix wrap on note on fenced code blocks in README.md
+e8a6e373 2015-10-12T23:31:06+01:00  Add note on fenced code block highlighting to README.md
+6eac9ffb 2015-10-12T13:53:26-04:00  Revert "Improve fenced code block matching"
+578647a9 2015-10-05T15:43:42-04:00  Merge pull request #82 from kevinoid/fence-matching
+=== vim-pasta :
+50ac52a3 2013-05-08T13:08:26+02:00  (HEAD -> master, origin/master, origin/HEAD) Blacklist yaml and slim filetypes too
+ce86061c 2012-12-03T23:29:54+01:00  License
+ff6b1561 2012-07-29T14:20:51+02:00  Make mapping configurable
+736e2df0 2012-04-04T14:31:48-07:00  Merge pull request #3 from suy/modification-marks
+10c3a13c 2012-04-03T10:43:57+02:00  Save and restore modification marks in NormalPasta
+=== vim-powerline :
+09c0cea8 2012-11-23T16:01:23+01:00  (HEAD -> develop, origin/develop, origin/HEAD) Use stricter matches. Also don’t count on 'ignorecase' option when matching buffers
+42505058 2012-11-23T16:01:16+01:00  Setup statusline for all windows opened when vim starts
+5d091d87 2012-11-23T16:01:13+01:00  Add support for command windows (q:, q/)
+fc89e906 2012-11-23T18:11:27+04:00  Add deprecation warning
+2af07485 2012-10-29T09:23:22+01:00  Fix GetShortPath() error on Windows
+=== vim-repeat :
+7a6675f0 2015-05-09T13:57:55-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #47 from orlp/master
+5bacc6f8 2015-05-07T14:29:12-04:00  Fix bogus spaces in maps
+e42a430e 2015-04-23T01:45:15+02:00  More realistic Vim error, and catch all normal exceptions.
+655dd3e2 2015-04-23T00:27:56+02:00  Prevent stack trace of search errors.
+c4f9f159 2015-04-03T10:30:37-04:00  Merge pull request #46 from wellle/45-fix-feedkeys-count
+=== vim-surround :
+2d05440a 2015-08-07T23:37:10-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #175 from yuex/ds__
+c4923901 2015-08-07T23:22:40-04:00  Merge pull request #167 from sunaku/issue-159
+e38dea39 2015-08-08T01:28:26+08:00  support ds<space><space>
+5c6a64f3 2015-04-30T10:36:59-07:00  GH-159: don't use comma as alias for HTML/XML tags
+772ab958 2015-03-15T13:32:12-05:00  Merge pull request #163 from kiryph/feature-repeat-late
+=== vim-unimpaired :
+23f471ad 2015-08-29T12:01:59-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #102 from mMontu/master
+870060f6 2015-08-28T17:11:02-03:00  Use :setlocal for window-local options
+1ec6af94 2015-07-08T17:45:41-04:00  Merge pull request #99 from awood/master
+056f1daf 2015-07-08T17:36:33-04:00  Alter conflict marker regex to work in recent Fedora.  Fixes #98.
+50344323 2015-06-10T08:39:24-04:00  Fix issue with triggering statusline redraw
+=== vim-vividchalk :
+fd696065 2012-03-03T06:25:03-05:00  (HEAD -> master, origin/master, origin/HEAD) Change ColorColumn, CursorLine, and CursorColumn to use s:hibg
+22aee9b8 2011-12-11T17:04:51-05:00  Add ColorColumn highlight
+c824c2a5 2010-02-19T15:19:30-05:00  (tag: v2.0) vividchalk.vim 2.0
+3e6ee09b 2009-12-13T14:50:47-05:00  Fix search highlighting in 16 color terminal
+87c3c2e3 2009-12-13T14:49:44-05:00  Initial commit
