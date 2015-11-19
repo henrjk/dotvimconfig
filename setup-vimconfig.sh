@@ -1,8 +1,8 @@
 #!/bin/bash
 # This script is in a git repository which contains my personal .vimrc file.
 # It installs the pathogen bundle and after this vim should be started and
-# one should verify using scriptnames: 
-# that pathogen installed. 
+# one should verify using scriptnames:
+# that pathogen installed.
 #
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -68,7 +68,3 @@ eexit () {  # name has same length as error making this easier to read.
   echo "ERROR: ${message}" >&2
   exit $code
 }
-
-
-
-

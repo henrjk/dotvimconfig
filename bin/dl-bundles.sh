@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # This script rm -rf the bundle dir and then reclones it.
+#
+# To include bundles in git repo the .git repository content
+# must be removed.
+# Script include_bundles.sh is used for that.
 
 # Initially copied from
 # https://github.com/tsaleh/dotfiles/blob/d5fcdac3135758a649ad26f951917cd9b659189c/vim/update_bundles
@@ -75,7 +79,7 @@ git_bundles=( \
 
 
 SCRIPT_DIR="${BASH_SOURCE%/*}"
-CLONE_DIR="$SCRIPT_DIR/downloads/bundle"
+CLONE_DIR="$SCRIPT_DIR/../downloads/bundle"
 
 if [ -d "$CLONE_DIR" ]; then
   rm -rf "$CLONE_DIR" || eexit "rm -rf $CLONE_DIR failed."
@@ -111,9 +115,3 @@ eexit () {  # name has same length as error making this easier to read.
   echo "ERROR: ${message}" >&2
   exit $code
 }
-
-
-
-
-
-

@@ -6,7 +6,7 @@
 
 ABS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-DOWNLOADS="$ABS_SCRIPT_DIR/downloads"
+DOWNLOADS="$ABS_SCRIPT_DIR/../downloads"
 
 mkdir -p "$DOWNLOADS"
 
@@ -15,8 +15,6 @@ mkdir -p "$DOWNLOADS/autoload" && \
 curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
 eexit "curl pathogen failed"
 # -L allow redirect, -Ss show error if it fails, -o output file
-
-"$ABS_SCRIPT_DIR/clone_bundles.sh" || eexit "clone_bundles.sh failed" 
 
 # some message output functions:
 error () {
@@ -47,8 +45,3 @@ eexit () {  # name has same length as error making this easier to read.
   echo "ERROR: ${message}" >&2
   exit $code
 }
-
-
-
-
-

@@ -1,6 +1,11 @@
 #!/bin/bash
-set -o nounset 
+set -o nounset
 set -x
+
+cat << INFO
+Removes .git directories in bundle repositories but captures
+recent history before that in file downloads/bundle/versions.txt.
+INFO
 
 eexit () {  # name has same length as error making this easier to read.
   local message code
@@ -12,31 +17,22 @@ eexit () {  # name has same length as error making this easier to read.
 
 REL_SCRIPT_DIR="${BASH_SOURCE%/*}"
 SCRIPT_DIR="$( cd "$REL_SCRIPT_DIR" && pwd )"
-CLONE_DIR="$SCRIPT_DIR/downloads/bundle"
+CLONE_DIR="$SCRIPT_DIR/../downloads/bundle"
 VERSIONS="$CLONE_DIR/versions.txt"
 
-touch "$VERSIONS"
 pushd "$CLONE_DIR" || eexit "Failed to cd to \"$CLONE_DIR\""
 
 echo "Versions captured on $(date -u +%Y-%m-%dT%T%z)" > "$VERSIONS"
-
 for d in */.git ; do
   out=$( \
-    cd "$d/.."    
-    echo "=== ${PWD##*/} :" 
+    cd "$d/.."
+    echo "=== ${PWD##*/} :"
     git log --format="%h %cI %d %s" -5
   )
   if [ $? -eq 0 ]; then
     echo "$out" >> "$VERSIONS"
-    rm -rf "$d" 
-  else 
+    rm -rf "$d"
+  else
     echo "=== ${d}/.. failed" >> "$VERSIONS"
-  fi 
-
-
+  fi
 done
-
-
-
-
-
