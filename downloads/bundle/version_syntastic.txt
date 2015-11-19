@@ -1,0 +1,6 @@
+=== syntastic history:
+cd40fe97 2015-11-16T16:49:58+02:00  (HEAD -> master, origin/master, origin/HEAD) Ansible-lint checker: make "-p" option mandatory.
+13c8e753 2015-11-16T13:19:24+02:00  Ansible-lint checker: add version check.
+7d627000 2015-11-15T22:26:44+02:00  Checkers clang_check and clang_tidy: workaround for a regression in Clang.
+721a42d5 2015-11-15T19:47:34+02:00  Ansible-lint checker: cleanup.
+f8e638d2 2015-11-15T15:29:04+02:00  Add ansible-lint syntax checkers

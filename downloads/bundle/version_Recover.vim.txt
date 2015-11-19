@@ -1,0 +1,6 @@
+=== Recover.vim history:
+efa491f6 2015-08-14T09:24:51+02:00  (HEAD -> master, origin/master, origin/HEAD) Fix #38 (do not fnameescape filename)
+15dc16a2 2015-06-10T13:57:31+02:00  check for existence of v:progpath before using it
+3a484a8d 2015-05-24T13:17:10+02:00  Don't assume vanilla Vim is being used
+18986428 2015-04-23T21:56:22+02:00  also find .swf files
+155f68c7 2015-04-23T21:55:06+02:00  check if stdout is actually a tty

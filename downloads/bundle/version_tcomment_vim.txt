@@ -1,0 +1,6 @@
+=== tcomment_vim history:
+f5ca095f 2015-11-12T20:00:52+01:00  (HEAD -> master, origin/master, origin/HEAD) runtime! autoload/tcomment/types/*.vim
+a63f458b 2015-11-10T20:21:21+01:00  FIX #153: map tblgen -> cpp
+c0679322 2015-10-13T17:06:36+02:00  Set markdown comment to <!--- ... --->
+e5da693f 2015-10-02T14:06:06+02:00  docs
+fe3cb6e5 2015-10-01T19:52:54+02:00  (tag: 3.08) Support for markdown

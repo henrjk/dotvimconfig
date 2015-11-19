@@ -1,0 +1,6 @@
+=== vim-pasta history:
+50ac52a3 2013-05-08T13:08:26+02:00  (HEAD -> master, origin/master, origin/HEAD) Blacklist yaml and slim filetypes too
+ce86061c 2012-12-03T23:29:54+01:00  License
+ff6b1561 2012-07-29T14:20:51+02:00  Make mapping configurable
+736e2df0 2012-04-04T14:31:48-07:00  Merge pull request #3 from suy/modification-marks
+10c3a13c 2012-04-03T10:43:57+02:00  Save and restore modification marks in NormalPasta

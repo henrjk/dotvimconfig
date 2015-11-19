@@ -1,0 +1,6 @@
+=== csapprox history:
+7981dac5 2013-07-26T23:41:55-04:00  (HEAD -> master, origin/master, origin/HEAD) Create the Normal highlight if it doesn't exist
+7f0186d6 2013-03-09T02:21:59-05:00  Refactor color string to RGB code into autoloads
+e0a47223 2013-03-09T02:21:59-05:00  Fix handling of pre-OS X Mac color names
+af90b27f 2013-03-07T23:59:30-05:00  Add fbterm as a known 256-color terminal
+38460da0 2013-02-14T22:52:06-05:00  removing pipes around help csapprox-changelog for user

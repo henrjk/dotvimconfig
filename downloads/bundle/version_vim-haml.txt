@@ -1,0 +1,6 @@
+=== vim-haml history:
+5c118902 2015-10-05T15:41:52-04:00  (HEAD -> master, origin/master, origin/HEAD) Minimal README
+204e3272 2014-08-08T12:24:30-04:00  Fix comments option
+9b7c3341 2014-08-07T19:55:50-04:00  Set comments option
+18ff6282 2014-06-10T19:03:07-04:00  Fix @media
+4d0834f0 2014-05-12T22:17:27-04:00  Merge pull request #62 from mil/sass-mediaquery-fix

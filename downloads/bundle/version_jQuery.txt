@@ -1,0 +1,6 @@
+=== jQuery history:
+895d2375 2011-06-03T07:18:26-07:00  (HEAD -> master, tag: 0.5.2, origin/master, origin/HEAD) Version 0.5.2: Fix an invalid regular expression
+8ddbcb95 2011-06-03T07:18:26-07:00  (tag: 0.5.1) Version 0.5.1: Fix an error with contains (it's a reserved keyword for Vim).
+f16bfec2 2011-05-11T12:11:29-07:00  (tag: 0.5) Version 0.5: Upgrade to match jquery 1.6 keywords
+1af1eda9 2010-11-06T11:03:50-07:00  (tag: 0.4) Version 0.4
+d321b054 2010-11-06T11:03:50-07:00  (tag: 0.3@1) Version 0.3@1: Recognize new keywords for jQuery 1.4

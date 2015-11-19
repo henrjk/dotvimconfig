@@ -1,0 +1,6 @@
+=== ctrlp.vim history:
+b5d3fe66 2013-07-29T11:04:59+07:00  (HEAD -> master, origin/master, origin/HEAD) Don't check for CtrlPLinePre
+83397bd0 2013-07-28T16:57:33+07:00  Use ts-prompt automatically when possible
+6e4fb3b4 2013-07-24T17:58:24+07:00  Add a max results setting
+aa026c0b 2013-07-19T02:12:36+07:00  Accept an optional bookmark name argument
+a14edbfc 2013-07-15T07:41:08+07:00  tags for ocaml

@@ -1,0 +1,6 @@
+=== vim-repeat history:
+7a6675f0 2015-05-09T13:57:55-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #47 from orlp/master
+5bacc6f8 2015-05-07T14:29:12-04:00  Fix bogus spaces in maps
+e42a430e 2015-04-23T01:45:15+02:00  More realistic Vim error, and catch all normal exceptions.
+655dd3e2 2015-04-23T00:27:56+02:00  Prevent stack trace of search errors.
+c4f9f159 2015-04-03T10:30:37-04:00  Merge pull request #46 from wellle/45-fix-feedkeys-count

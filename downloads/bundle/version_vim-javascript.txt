@@ -1,0 +1,6 @@
+=== vim-javascript history:
+1d8c2677 2015-09-23T13:07:02-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge branch 'develop'
+255d5e6d 2015-09-16T10:20:23-07:00  (origin/develop) Merge pull request #302 from unclechu/develop-prop-synonym
+131c2d36 2015-09-16T12:07:49+03:00  Added jsdoc synonym @prop for @property
+924de0eb 2015-09-01T15:05:26-04:00  Merge pull request #292 from wbinnssmith/wbinnssmith/async-await-develop
+e9ee3895 2015-08-31T21:06:19-07:00  Add support for async and await keywords

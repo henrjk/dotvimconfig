@@ -1,0 +1,6 @@
+=== vim-fugitive history:
+1ecd12d5 2015-11-06T15:54:34-05:00  (HEAD -> master, origin/master, origin/HEAD) Add support for fish shell syntax
+f8aa87a4 2015-11-03T09:52:22-05:00  Fix when $GIT_DIR is set and is not an absolute path
+dba8a070 2015-10-16T23:48:38-04:00  Fix diff sometimes opening in preview window
+8cf3d94a 2015-10-07T00:21:49-04:00  Support gf in git filetypes
+28de2a1d 2015-10-07T00:21:49-04:00  Enable jumping on @@ hunk header

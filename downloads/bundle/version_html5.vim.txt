@@ -1,0 +1,6 @@
+=== html5.vim history:
+ad38231d 2015-10-26T22:17:40+08:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #68 from sheerun/patch-1
+54f8c090 2015-10-24T14:40:09+02:00  Reference vim-polyglot language pack
+76da614e 2015-08-13T15:54:48+08:00  Fix #65, Revert "Fix #63, indent all possible element name"
+a7def465 2015-08-11T17:01:52+08:00  Fix #63, indent all possible element name
+40e924c9 2015-05-19T09:27:48+08:00  Merge pull request #62 from bendavis78/html5-custom-tag-spec

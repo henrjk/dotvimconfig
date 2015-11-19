@@ -1,0 +1,6 @@
+=== vim-json history:
+f5e3181d 2015-05-11T22:11:47-05:00  (HEAD -> master, origin/master, origin/HEAD) setlocal filetype instead of apparently troublesome setfiletype in ftdetect
+1839a737 2015-05-10T11:25:16-05:00  added link to manual install instructions
+3673f434 2015-05-10T11:21:09-05:00  Merge pull request #53 from igas/geojson
+092030d8 2015-05-04T15:59:15+08:00  Add geojson file type
+994a031b 2015-04-07T02:43:48-05:00  updated readme.md images

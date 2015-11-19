@@ -1,0 +1,6 @@
+=== Gist.vim history:
+7f279e51 2014-10-19T21:30:13-04:00  (HEAD -> master, tag: 7.2, origin/master, origin/HEAD) Version 7.2: This is an upgrade for Gist.vim: fixed many bugs.
+52df580b 2014-10-19T21:30:13-04:00  (tag: 7.1) Version 7.1: This is an upgrade for Gist.vim: updated installation notes.
+ae0ca2e5 2012-10-07T17:37:01-05:00  (tag: 7.0) Version 7.0: This is an upgrade for Gist.vim: fixed few bugs.
+db2bdcf9 2012-09-13T00:26:54-05:00  (tag: 6.9) Version 6.9: This is an upgrade for Gist.vim: fixed few bugs.
+40e0dd10 2012-08-08T01:16:04-05:00  (tag: 6.8) Version 6.8

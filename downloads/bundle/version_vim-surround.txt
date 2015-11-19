@@ -1,0 +1,6 @@
+=== vim-surround history:
+2d05440a 2015-08-07T23:37:10-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #175 from yuex/ds__
+c4923901 2015-08-07T23:22:40-04:00  Merge pull request #167 from sunaku/issue-159
+e38dea39 2015-08-08T01:28:26+08:00  support ds<space><space>
+5c6a64f3 2015-04-30T10:36:59-07:00  GH-159: don't use comma as alias for HTML/XML tags
+772ab958 2015-03-15T13:32:12-05:00  Merge pull request #163 from kiryph/feature-repeat-late

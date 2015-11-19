@@ -1,0 +1,6 @@
+=== emmet-vim history:
+451367a2 2015-11-10T10:34:50+09:00  (HEAD -> master, origin/master, origin/HEAD) add doc for emmet-update-tag
+f752a425 2015-11-10T10:25:11+09:00  add doc for emmet-expand-word
+1672e566 2015-11-10T09:43:25+09:00  should behave on only html
+5819343b 2015-11-10T09:41:17+09:00  oops. fixed bug
+913dfe68 2015-11-10T09:39:13+09:00  remove debug message

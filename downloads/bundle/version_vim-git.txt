@@ -1,0 +1,6 @@
+=== vim-git history:
+37fd7c57 2015-10-06T17:33:15-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #32 from matthewd/worktrees
+6266338d 2015-10-01T09:25:41+09:30  Recognise commits from inside worktrees
+36126609 2015-01-19T12:03:07-06:00  Merge pull request #28 from garymh/patch-1
+8681678d 2015-01-19T11:44:35-06:00  Adding "gitconfig" (without the dot) to the filetypes
+297e7075 2014-07-18T11:47:18-04:00  Fix "Filenames:" header for gitsendemail

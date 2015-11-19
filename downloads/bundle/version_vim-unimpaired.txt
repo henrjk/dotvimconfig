@@ -1,0 +1,6 @@
+=== vim-unimpaired history:
+23f471ad 2015-08-29T12:01:59-04:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #102 from mMontu/master
+870060f6 2015-08-28T17:11:02-03:00  Use :setlocal for window-local options
+1ec6af94 2015-07-08T17:45:41-04:00  Merge pull request #99 from awood/master
+056f1daf 2015-07-08T17:36:33-04:00  Alter conflict marker regex to work in recent Fedora.  Fixes #98.
+50344323 2015-06-10T08:39:24-04:00  Fix issue with triggering statusline redraw

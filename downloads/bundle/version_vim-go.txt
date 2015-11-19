@@ -1,0 +1,6 @@
+=== vim-go history:
+6384e3ab 2015-11-16T11:13:53+02:00  (HEAD -> master, origin/master, origin/HEAD) Merge pull request #602 from fatih/auto-height-quickfix
+338ad4b5 2015-11-16T10:35:19+02:00  Merge pull request #604 from moorereason/fix603
+749599c8 2015-11-15T22:21:50-06:00  Fix goCharacter syntax region to be contained
+d5a1dff5 2015-11-16T01:37:38+02:00  util: add auto quickfix window height for errors [GH-592]
+a98ed535 2015-11-15T23:45:19+02:00  Merge pull request #601 from tsuna/master

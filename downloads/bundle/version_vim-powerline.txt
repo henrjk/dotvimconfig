@@ -1,0 +1,6 @@
+=== vim-powerline history:
+09c0cea8 2012-11-23T16:01:23+01:00  (HEAD -> develop, origin/develop, origin/HEAD) Use stricter matches. Also don’t count on 'ignorecase' option when matching buffers
+42505058 2012-11-23T16:01:16+01:00  Setup statusline for all windows opened when vim starts
+5d091d87 2012-11-23T16:01:13+01:00  Add support for command windows (q:, q/)
+fc89e906 2012-11-23T18:11:27+04:00  Add deprecation warning
+2af07485 2012-10-29T09:23:22+01:00  Fix GetShortPath() error on Windows
