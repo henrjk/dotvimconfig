@@ -1,6 +1,8 @@
-#!/usr/bin/env ruby
+#!/bin/bash
 
-# Initially copied from 
+# This script rm -rf the bundle dir and then reclones it.
+
+# Initially copied from
 # https://github.com/tsaleh/dotfiles/blob/d5fcdac3135758a649ad26f951917cd9b659189c/vim/update_bundles
 
 # Requirements:
@@ -9,31 +11,31 @@
 # cool things not yet added:
 #  git://github.com/kana/vim-textobj-user.git  define ones own text objects
 # bundles looking interesting but currently (perhaps) not needed.
-perhaps_later = %w{
+perhaps_later=(
   git://github.com/Valloric/YouCompleteMe.git
   git://github.com/tsaleh/vim-tmux.git
   git://github.com/slim-template/vim-slim.git
   git://github.com/tpope/vim-rbenv.git
-}
+)
 
 
 # git bundles for file handling
-gb_files = %w{
+gb_files=(
   git://github.com/kien/ctrlp.vim.git
   git://github.com/scrooloose/nerdtree.git
-}
+)
 
 # git bundles to support git
-gb_git = %w{
+gb_git=(
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-git.git
   git://github.com/gregsexton/gitv.git
   git://github.com/vim-scripts/Gist.vim.git
-}
+)
 
 # General bundles to improve vim:
 #   pasta makes pastes indent better.
-gb_general = %w{
+gb_general=(
   git://github.com/godlygeek/csapprox.git
   git://github.com/sickill/vim-pasta.git
   git://github.com/tomtom/tcomment_vim.git
@@ -43,10 +45,10 @@ gb_general = %w{
   git://github.com/tpope/vim-vividchalk.git
   git://github.com/chrisbra/Recover.vim.git
   git://github.com/Lokaltog/vim-powerline.git
-}
+)
 
 # language related bundles
-gb_lang_web = %w{
+gb_lang_web=(
   git://github.com/scrooloose/syntastic.git
   git://github.com/mattn/emmet-vim.git
   git://github.com/othree/html5.vim.git
@@ -57,32 +59,61 @@ gb_lang_web = %w{
   git://github.com/wookiehangover/jshint.vim.git
   git://github.com/elzr/vim-json.git
   git://github.com/vim-scripts/jQuery.git
-}
+)
 
-gb_lang_go = %w{
+gb_lang_go=(
   git://github.com/fatih/vim-go.git
-}
-
-gb_lang_etc = %w{
+)
+gb_lang_etc=(
   git://github.com/tpope/vim-haml.git
   git://github.com/tpope/vim-markdown.git
+)
+
+git_bundles=( \
+  "${gb_files[@]}" "${gb_git[@]}" "${gb_general[@]}" \
+  "${gb_lang_web[@]}" "${gb_lang_go[@]}" "${gb_lang_etc[@]}" )
+
+
+SCRIPT_DIR="${BASH_SOURCE%/*}"
+CLONE_DIR="$SCRIPT_DIR/downloads/bundle"
+
+if [ -d "$CLONE_DIR" ]; then
+  rm -rf "$CLONE_DIR" || eexit "rm -rf $CLONE_DIR failed."
+fi
+
+mkdir -p "$CLONE_DIR"
+cd "$CLONE_DIR" || eexit "Failed to cd $CLONE_DIR."
+pwd
+for repo in "${git_bundles[@]}"; do
+  git clone "$repo"
+done
+
+# some message output functions:
+error () {
+  local message="${1-}"
+  if [ -z "$message" ]; then
+    echo "" >&2
+  else
+    echo "ERROR: ${message}" >&2
+  fi
 }
 
-git_bundles = gb_files + gb_git + gb_general + gb_lang_web + gb_lang_go + gb_lang_etc
+note () {
+  local message
+  message="$1"
+  echo "NOTE: ${message}" >&2
+}
 
-require 'fileutils'
-require 'open-uri'
-
-bundles_dir = File.join(File.dirname(__FILE__), "bundle")
-
-FileUtils.rm_rf(bundles_dir)
-FileUtils.mkdir(bundles_dir)
-FileUtils.cd(bundles_dir)
-
-git_bundles.each do |url|
-  puts url
-  `git clone -q #{url}`
-end
+eexit () {  # name has same length as error making this easier to read.
+  local message code
+  message="$1"
+  code="${2-2}"
+  echo "ERROR: ${message}" >&2
+  exit $code
+}
 
 
-# Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
+
+
+
+

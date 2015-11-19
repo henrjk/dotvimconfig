@@ -11,20 +11,18 @@ mkdir -p "$DOWNLOADS"
 
 # https://github.com/tpope/vim-pathogen
 if [[ -a  "$DOWNLOADS/autoload/pathogen.vim" ]]; then
-	echo "WARN: $DOWNLOADS/autoload/pathogen.vim already exists: skipping download."
+  warn "$DOWNLOADS/autoload/pathogen.vim already exists: skipping download."
 else
-	mkdir -p "$DOWNLOADS/autoload" && \
-	curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
+  mkdir -p "$DOWNLOADS/autoload" && \
+  curl -LSso "$DOWNLOADS/autoload/pathogen.vim" https://tpo.pe/pathogen.vim || \
   eexit "curl pathogen failed"
-	# -L allow redirect, -Ss show error if it fails, -o output file
+  # -L allow redirect, -Ss show error if it fails, -o output file
 fi
 
-if [[ -a  "$DOWNLOADS/bundle" ]]; then
-  echo "WARN: $DOWNLOADS/bundle already exists: skipping cloning of bundles."
+if [[ -d  "$DOWNLOADS/bundle" ]]; then
+  warn "$DOWNLOADS/bundle already exists: skipping cloning of bundles."
 else
-  mkdir -p "$DOWNLOADS/bundle" && \
-  cp update_bundles "$DOWNLOADS" && pushd "$DOWNLOADS" && 
-  ./update_bundles || eexit "bundle update failed" 
+  "$ABS_SCRIPT_DIR/clone_bundles.sh" || eexit "clone_bundles.sh failed" 
 fi
 
 [[ -a autoload ]] || ln -s downloads/autoload autoload || eexit "ln -s for autoload failed"
@@ -39,6 +37,12 @@ error () {
   else
     echo "ERROR: ${message}" >&2
   fi
+}
+
+warn() {
+  local message
+  message="$1"
+  echo "WARN: ${message}" >&2
 }
 
 note () {

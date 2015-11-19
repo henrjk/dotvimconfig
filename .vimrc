@@ -11,6 +11,8 @@ set nocompatible
 "
 execute pathogen#infect()
 execute pathogen#infect('~/.vim/bundle-forked/{}')
+execute pathogen#helptags()  
+" if this is too slow use :Helptags in vim
 syntax on
 set showcmd                     " display incomplete commands
 filetype plugin indent on	" load file type plugins + indentation

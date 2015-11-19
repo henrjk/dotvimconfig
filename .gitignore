@@ -1,4 +1,3 @@
-autoload
-bundle
-downloads/
+/autoload
+/bundle
 *.swp
