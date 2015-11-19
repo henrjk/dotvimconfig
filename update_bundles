@@ -47,6 +47,7 @@ gb_general = %w{
 
 # language related bundles
 gb_lang_web = %w{
+  git://github.com/scrooloose/syntastic.git
   git://github.com/mattn/emmet-vim.git
   git://github.com/othree/html5.vim.git
   git://github.com/groenewege/vim-less.git
